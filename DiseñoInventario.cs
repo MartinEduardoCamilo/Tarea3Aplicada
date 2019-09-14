@@ -47,10 +47,8 @@ namespace Tarea3
             public override string ToString()
             {
                 StringBuilder sb = new StringBuilder();
-                sb.AppendFormat("ID:" + ID + "\nNombre Producto:" + nombreProducto + "\nDepartamento Producto:" +
-                    DepartamentoProducto + "\nCosto producto:" + CostoProducto + "\nPrecio Producto:" + PrecioVentaProducto +
-                    "\nCantidad Producto:" + CantidadProducto + "\nDescripción Producto:" + DescripcionProducto + "\nITBIS:" +
-                    ItbisProducto);
+                sb.AppendFormat("ID:" + ID + "\nNombre Producto:" + nombreProducto + "\nDepartamento Producto:" +DepartamentoProducto + "\nCosto producto:" + CostoProducto + "\nPrecio Producto:" + PrecioVentaProducto +
+                "\nCantidad Producto:" + CantidadProducto + "\nDescripción Producto:" + DescripcionProducto + "\nITBIS:" + ItbisProducto);
                 return sb.ToString();
             }
     }
