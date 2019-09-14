@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9618749B-8865-4FE3-B25F-F560416A2988}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tarea3</RootNamespace>
+    <AssemblyName>Tarea3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiseñoInventario.cs" />
+    <Compile Include="Enumeracion.cs" />
+    <Compile Include="EstudianteEscuela.cs" />
+    <Compile Include="Factoriales.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MascotaDueño.cs" />
+    <Compile Include="Poligono.cs" />
+    <Compile Include="ProductoTienda.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\DiseñoDeInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DiseñoDeInventario.Designer.cs">
+      <DependentUpon>DiseñoDeInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DueñodelaMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DueñodelaMascota.Designer.cs">
+      <DependentUpon>DueñodelaMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Escuela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Escuela.Designer.cs">
+      <DependentUpon>Escuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NeumaticoEnumeracioncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NeumaticoEnumeracioncs.Designer.cs">
+      <DependentUpon>NeumaticoEnumeracioncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PoligonoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PoligonoForm.Designer.cs">
+      <DependentUpon>PoligonoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\DiseñoDeInventario.resx">
+      <DependentUpon>DiseñoDeInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DueñodelaMascota.resx">
+      <DependentUpon>DueñodelaMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Escuela.resx">
+      <DependentUpon>Escuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NeumaticoEnumeracioncs.resx">
+      <DependentUpon>NeumaticoEnumeracioncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PoligonoForm.resx">
+      <DependentUpon>PoligonoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
