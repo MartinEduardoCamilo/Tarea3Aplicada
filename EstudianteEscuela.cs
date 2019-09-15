@@ -47,11 +47,9 @@ namespace Tarea3
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Matrícula:" + Matricula + "\nNombres:" + Nombres + "\nApellidos:" + Apellidos
-                + "\nEdad:" + Edad + "\nDirección:" + Direccion + "\nGrado:" + Grado + "\nSección:" + Seccion
-                + "\nPromedio Semestral:" + promedioSemestral + "\nNombres del Padre:" + NombresPadre
-                + "\nNombres de la Madre:" + NombresMadre + "\nCédula del Padre:" + CedulaPadre
-                + "\nCédula de la Madre:" + CedulaMadre);
+            sb.AppendFormat("Matrícula:" + Matricula + "\nNombres:" + Nombres + "\nApellidos:" + Apellidos+ "\nEdad:" + Edad + "\nDirección:" + Direccion + "\nGrado:" + Grado + "\nSección:" + Seccion
+            + "\nPromedio Semestral:" + promedioSemestral + "\nNombres del Padre:" + NombresPadre+ "\nNombres de la Madre:" + NombresMadre + "\nCédula del Padre:" + CedulaPadre
+            + "\nCédula de la Madre:" + CedulaMadre);
             return sb.ToString();
         }
     }
