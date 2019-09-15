@@ -21,8 +21,9 @@ namespace Tarea3
             {
             }
 
-            public DiseñoInventario(int iD, string nombreProducto, string departamentoProducto, double costoProducto, double precioVentaProducto, int cantidadProducto,
-            string descripcionProducto, double itbisProducto)
+            public DiseñoInventario(int iD, string nombreProducto, string departamentoProducto,
+                double costoProducto, double precioVentaProducto, int cantidadProducto,
+                string descripcionProducto, double itbisProducto)
             {
                 ID = iD;
                 this.nombreProducto = nombreProducto;
@@ -47,7 +48,7 @@ namespace Tarea3
             {
                 StringBuilder sb = new StringBuilder();
                 sb.AppendFormat("ID:" + ID + "\nNombre Producto:" + nombreProducto + "\nDepartamento Producto:" +DepartamentoProducto + "\nCosto producto:" + CostoProducto + "\nPrecio Producto:" + PrecioVentaProducto +
-                "\nCantidad Producto:" + CantidadProducto + "\nDescripción Producto:" + DescripcionProducto + "\nITBIS:" +ItbisProducto);
+                "\nCantidad Producto:" + CantidadProducto + "\nDescripción Producto:" + DescripcionProducto + "\nITBIS:" + ItbisProducto);
                 return sb.ToString();
             }
     }
